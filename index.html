@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chaitanya S — AI & ML Student, Python & C Learner, Creative Coder, and Carnatic Classical Singer. Explore my portfolio showcasing projects, skills, and journey in technology.">
+    <meta name="keywords" content="Chaitanya S, AI, Machine Learning, Portfolio, Python, C, Creative Coding, REVA University">
+    <meta name="author" content="Chaitanya S">
+    <title>Chaitanya S — AI & ML Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>CS<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#beyond" class="nav-link">Beyond Code</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-image" style="background-image: url('assets/images/hero-bg.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-avatar-wrapper">
+                <div class="avatar-ring">
+                    <img src="assets/images/avatar.png" alt="Chaitanya S Avatar" class="hero-avatar">
+                </div>
+                <div class="status-dot"></div>
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting">
+                    <span class="wave">👋</span> Hello, I'm
+                </p>
+                <h1 class="hero-name">
+                    <span class="name-line" id="heroName">Chaitanya S</span>
+                </h1>
+                <div class="hero-typewriter">
+                    <span class="typewriter-prefix">I </span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-tagline">
+                    AI & ML Student • Creative Coder • Classical Singer
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-intro">
+                        I'm a <strong>Computer Science Engineering</strong> student specializing in <strong>AI & Machine Learning</strong>, 
+                        currently building my foundation in programming with <strong>C</strong> and <strong>Python</strong>.
+                    </p>
+                    <p>
+                        I'm deeply interested in how technology can be used to solve real-world problems, and I enjoy 
+                        exploring concepts beyond the classroom through hands-on learning and experimentation.
+                    </p>
+                    <p>
+                        What drives me is <em>curiosity</em> — I like understanding how systems work, breaking problems down, 
+                        and gradually building solutions. I'm particularly interested in AI, creative coding, and the 
+                        process of turning ideas into functional projects.
+                    </p>
+                    <p>
+                        Alongside technology, I'm also trained in <strong>Carnatic classical music</strong>, which has helped me 
+                        develop discipline, consistency, and a strong attention to detail — qualities I bring into my 
+                        learning and work in tech.
+                    </p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-info">
+                            <span class="stat-label">Focus Area</span>
+                            <span class="stat-value">AI & ML</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💻</div>
+                        <div class="stat-info">
+                            <span class="stat-label">Languages</span>
+                            <span class="stat-value">C & Python</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎨</div>
+                        <div class="stat-info">
+                            <span class="stat-label">Passion</span>
+                            <span class="stat-value">Vibe Coding</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎵</div>
+                        <div class="stat-info">
+                            <span class="stat-label">Art Form</span>
+                            <span class="stat-value">Carnatic Music</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📍</div>
+                        <div class="stat-info">
+                            <span class="stat-label">Location</span>
+                            <span class="stat-value">Bengaluru</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎤</div>
+                        <div class="stat-info">
+                            <span class="stat-label">Skill</span>
+                            <span class="stat-value">Public Speaking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Learning</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" data-width="45"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">C Language</span>
+                                <span class="skill-level">Learning</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" data-width="40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">AI Fundamentals</span>
+                                <span class="skill-level">Exploring</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" data-width="35"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-level">Exploring</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" data-width="30"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">Creative / Vibe Coding</span>
+                                <span class="skill-level">Exploring</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" data-width="40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                        </div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">Public Speaking</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">Communication</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">Problem Solving</span>
+                                <span class="skill-level">Growing</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" data-width="55"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Exploring ideas and building solutions — one project at a time.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="assets/images/ai-project.png" alt="AI & ML Explorations">
+                        <div class="project-image-overlay">
+                            <span class="project-status">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <h3 class="project-title">AI & ML Explorations</h3>
+                        <p class="project-desc">Building foundational AI/ML projects — from simple classifiers to neural network experiments. Focused on understanding the math and intuition behind algorithms.</p>
+                        <div class="project-links">
+                            <span class="project-link-placeholder">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                Coming Soon
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="assets/images/python-project.png" alt="Python Projects">
+                        <div class="project-image-overlay">
+                            <span class="project-status">Building</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scripting</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <h3 class="project-title">Python Toolbox</h3>
+                        <p class="project-desc">A collection of Python scripts and mini-projects — automations, data processing tools, and problem-solving exercises that sharpen programming fundamentals.</p>
+                        <div class="project-links">
+                            <span class="project-link-placeholder">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                Coming Soon
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="assets/images/creative-coding.png" alt="Creative Coding">
+                        <div class="project-image-overlay">
+                            <span class="project-status">Exploring</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Creative Code</span>
+                            <span class="tag">Vibe Coding</span>
+                            <span class="tag">Generative Art</span>
+                        </div>
+                        <h3 class="project-title">Vibe Coding Lab</h3>
+                        <p class="project-desc">Where code meets creativity. Experimenting with generative art, interactive visuals, and the joy of "vibe coding" — letting intuition guide the process.</p>
+                        <div class="project-links">
+                            <span class="project-link-placeholder">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                Coming Soon
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot active-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Current</div>
+                        <h3>REVA University</h3>
+                        <h4>Bachelor of Technology — Artificial Intelligence and Machine Learning</h4>
+                        <p class="timeline-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            September 2025 — November 2029
+                        </p>
+                        <p class="timeline-desc">Pursuing a B.Tech in AI & ML with a focus on building strong programming fundamentals and exploring cutting-edge technologies in artificial intelligence.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge completed-badge">Completed</div>
+                        <h3>ICS Mahesh PU College</h3>
+                        <h4>Pre-University Education</h4>
+                        <p class="timeline-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            January 2024 — July 2025
+                        </p>
+                        <p class="timeline-desc">Built a strong academic foundation during pre-university studies, developing analytical thinking and a passion for science and technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond Code Section -->
+    <section class="section beyond" id="beyond">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;beyond-code&gt;</span>
+                <h2 class="section-title">Beyond Code</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="beyond-grid">
+                <div class="beyond-card music-card reveal">
+                    <div class="beyond-image">
+                        <img src="assets/images/music.png" alt="Carnatic Classical Music">
+                    </div>
+                    <div class="beyond-content">
+                        <div class="beyond-icon">🎵</div>
+                        <h3>Carnatic Classical Music</h3>
+                        <p>Trained in Carnatic classical music — an ancient Indian art form that demands precision, 
+                        dedication, and deep understanding of rhythm and melody. This discipline has profoundly 
+                        shaped my approach to problem-solving and learning in technology.</p>
+                        <div class="beyond-traits">
+                            <span class="trait">🎯 Discipline</span>
+                            <span class="trait">🔍 Attention to Detail</span>
+                            <span class="trait">📈 Consistency</span>
+                            <span class="trait">🧘 Patience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="beyond-mini-cards reveal">
+                    <div class="mini-card">
+                        <div class="mini-icon">🎤</div>
+                        <h4>Singer</h4>
+                        <p>Performing and expressing through classical and contemporary music</p>
+                    </div>
+                    <div class="mini-card">
+                        <div class="mini-icon">🗣️</div>
+                        <h4>Public Speaker</h4>
+                        <p>Confident in communicating ideas and engaging audiences</p>
+                    </div>
+                    <div class="mini-card">
+                        <div class="mini-icon">💡</div>
+                        <h4>Curious Explorer</h4>
+                        <p>Always learning, experimenting, and pushing creative boundaries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">I'm always open to learning opportunities, collaborations, and interesting conversations.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:chaitanya390148@gmail.com" class="contact-card reveal" id="contact-email">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>chaitanya390148@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/chaitanya-s-1a8708361" target="_blank" rel="noopener noreferrer" class="contact-card reveal" id="contact-linkedin">
+                    <div class="contact-icon linkedin-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me</p>
+                </a>
+                <div class="contact-card reveal" id="contact-location">
+                    <div class="contact-icon location-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Greater Bengaluru Area</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>CS<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by Chaitanya S</p>
+                <p class="footer-sub">Building skills for the future — one line of code at a time.</p>
+                <div class="footer-divider"></div>
+                <p class="footer-copy">&copy; 2026 Chaitanya S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

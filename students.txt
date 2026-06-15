@@ -1,0 +1,5 @@
+1 Alice 95.50
+2 Bob 82.30
+3 Charlie 78.00
+4 Diana 91.75
+5 Eve 88.40
